@@ -4,7 +4,6 @@ body , p , a , ul , li {
     text-decoration: none;
     color: rgb(25, 25, 25);
 }
-
 li{
     list-style-type: none;
 }
@@ -27,7 +26,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     height: 580px;
-    background-position: center;
+    background-position: center center;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -98,6 +97,9 @@ form{
 }
 div .location{
    margin: 11px 5px;
+}
+.search-icon{
+    display: none;
 }
 form input{
     width: 100%;
@@ -197,10 +199,10 @@ form button{
     display: flex;
     flex-flow: row;
     width: 100%;
-    max-width: 1184px;
     align-items: stretch;
-    margin:90px auto;
-    position: relative;
+    justify-content: center;
+    margin: auto;
+    position: absolute;
 }
 .mid2-1{
     display: flex;
@@ -222,9 +224,8 @@ form button{
     line-height: 24px;
 }
 .mid2 img{
-    right: 5px;
+    margin-left: 50px;
     padding: 0px;
-    position: absolute;
 }
 .mid2 .mid2-1 button{
     width: 120px;
@@ -249,7 +250,8 @@ form button{
     width: 100%;
     justify-content: center;
     margin:0 auto;
-    padding: 100px 0px 96px;
+    padding: 140px 0px 96px;
+    margin-top: 540px;
     background-color: rgb(255, 240, 237);
 }
 .mid3-1{
@@ -309,7 +311,7 @@ footer h4{
     margin: 0;
     margin-bottom: 8px;
 }
-footer li{
+footer li , footer a{
     color: rgb(196, 196, 196);
     cursor: pointer;
     font-size: 14px;
@@ -321,7 +323,7 @@ footer li{
 .end-part{
     max-width: 1160px;
 }
-footer li:hover{
+footer li:hover , footer a:hover{
     text-decoration: underline;
 }
 .footer-links a{
@@ -353,7 +355,6 @@ footer li:hover{
 .appstore{
     display: flex;
     flex-direction: column;
-    
 }
 .appstore .istore , .appstore .playstore{
     padding: 2px 8px;
@@ -366,15 +367,19 @@ footer li:hover{
 .playstore:hover , .istore:hover{
     opacity: 1;
 }
-.tail-end{
+.tail-end , .footer-links{
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     margin: 0;
+    align-items: center;
 }
-.footer-links ul{
+.footer-links a{
     display: flex;
     align-items: center;
     padding: 20px;
+}
+.social-media{
+    margin: auto 0;
 }
 .media-icons{
     opacity: 0.7;
@@ -454,6 +459,9 @@ footer li:hover{
     .mid2 .mid2-1 p br{
                 display: none;
     }
+    .mid3{
+        margin-top: 400px;
+    }
     .mid3 .mid3-1 h3{
                 font-size: 24px;
                 line-height: 32px;
@@ -465,5 +473,173 @@ footer li:hover{
     }
     .mid3 .mid3-1 p br{
         display: none;
+    }
 }
+
+
+
+/* small tablets  */
+
+@media screen and (max-width:959px) {
+
+    .dd{
+        height: 420px;
+        width: 100vw;
+    }
+
+    .welcome-text{
+        margin-top: 0;
+    }
+    .welcome-text h2{
+        font-size: 32px;
+    }
+
+    .head h1{
+        display: none;
+    }
+    .head {
+        padding-top: 100px;
+        margin: 0;
+    }
+    .head svg{
+        width: 3.5em;
+    }
+    .mid2 img , .mid3 img{
+        max-width: 500px;
+    }
+    .mid2 .mid2-1 h3 br{
+        display: none;
+    }
+    .mid2 .mid2-1 p , .mid3 .mid3-1 p{
+        max-width: 270px;
+    }
+    .mid2 .mid2-1 button{
+        font-size: 14px;
+        line-height: 16px;
+        min-height: 32px;
+        padding: 0px;
+        width: 101.5px;
+    }
+    .mid3{
+        margin-top: 375px;
+        padding-top: 100px;
+    }
+    .mid3 .mid3-1 button{
+        font-size: 14px;
+        line-height: 16px;
+        min-height: 32px;
+        padding: 0px;
+        width: 130.8px;
+    }
+    footer .end-part .list-top{
+        flex-direction: column;
+    }
+    .list1{
+        justify-content: space-between;
+    }
+    .list2 , .list3{
+        justify-content: space-between;
+    }
+    .list2-2{
+        padding-right: 250px;
+    }
+    .list-bottom{
+        flex-direction: column-reverse;
+    }
+    .appstore{
+        align-items: center;
+    }
+    .social-media{
+        margin-top: 22px;
+    }
+}
+
+
+@media screen and (max-width:767px) {
+
+    
+    form{
+        width: 275px;
+        border-radius: 20px;
+    }
+    .location{
+        display: none;
+    }
+    .search-icon{
+        display: block;
+        padding: 10px
+    }
+    .mid1 ul li img{
+        height: 88px;
+        width: 88px;
+        margin-right: 25px;
+        padding-bottom: 40px;
+    }
+    .mid2{
+        flex-direction: column-reverse;
+    }
+ 
+    .mid2 .ain-imgss{
+        display: flex;
+        justify-content: end;
+    }    
+    .mid2 .mid2-1{
+        display: flex;
+        margin: 0 auto;
+    }
+    .mid2 .mid2-1 h3{
+        margin-top: 15px;
+    }
+    .mid3{
+        flex-direction: column;
+        padding-top: 300px;
+        margin-top: 300px;
+    }
+    .mid3 .mid3-1{
+        display: flex;
+        margin: 0 auto;
+    }
+    .mid3 .mid3-1 h3{
+        margin-top: 15px;
+    }
+    footer .end-part .list-top{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-around;
+    }
+    .list-bottom{
+        padding-bottom: 0px;
+    }
+    .list1 , .list2{
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+    }
+    .list1-wrapper , .list2-wrapper{
+        text-align: center;
+    }
+    .list1-1 , .list1-2 , .list2-1 , .list2-2{
+        padding: 0;
+    }
+    .list3{
+        flex-direction: column;
+        align-items: center;
+    }
+    .list3-1 , .list3-2 , .list3-3{
+        padding: 0;
+        padding-top: 32px;
+        text-align: center;
+    }
+    .tail-end{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        padding: 32px 0;
+    } 
+    .footer-links a{
+        font-size: 12px;
+        margin-left: 16px;
+        padding:32px 0;
+    }
 }
